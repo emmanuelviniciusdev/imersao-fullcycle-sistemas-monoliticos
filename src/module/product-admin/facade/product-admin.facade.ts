@@ -14,7 +14,7 @@ import {
     ProductAdminFacadeInterface,
 } from "./product-admin.facade.interface";
 
-export interface ProductAdminFacadeProps {
+type ProductAdminFacadeProps = {
     addProductUsecase: UsecaseInterface<
         AddProductInputDTO,
         AddProductOutputDTO
@@ -23,7 +23,7 @@ export interface ProductAdminFacadeProps {
         CheckProductStockInputDTO,
         Partial<CheckProductStockOutputDTO>
     >;
-}
+};
 
 export class ProductAdminFacade implements ProductAdminFacadeInterface {
     private _addProductUsecase: UsecaseInterface<

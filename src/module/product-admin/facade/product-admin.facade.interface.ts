@@ -23,5 +23,5 @@ export interface ProductAdminFacadeInterface {
     addProduct(input: AddProductFacadeInputDTO): Promise<void>;
     checkProductStock(
         input: CheckProductStockFacadeInputDTO
-    ): Promise<CheckProductStockFacadeOutputDTO>;
+    ): Promise<Partial<CheckProductStockFacadeOutputDTO>>;
 }

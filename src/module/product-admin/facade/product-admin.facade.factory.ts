@@ -1,5 +1,6 @@
 import { ProductRepository } from "../repository/product.repository";
 import { AddProductUsecase } from "../usecase/add-product.usecase";
+import { CheckProductStockUsecase } from "../usecase/check-product-stock.usecase";
 import { ProductAdminFacade } from "./product-admin.facade";
 
 export class ProductAdminFacadeFactory {
@@ -7,13 +8,9 @@ export class ProductAdminFacadeFactory {
         const productRepository = new ProductRepository();
 
         const addProductUsecase = new AddProductUsecase(productRepository);
-
-        /**
-         * TODO: Implement this usecase (it's one of the challenges).
-         *
-         * The tests for the repository, usecase and facade will also need to be implemented.
-         */
-        const checkProductStockUsecase: any = undefined;
+        const checkProductStockUsecase = new CheckProductStockUsecase(
+            productRepository
+        );
 
         return new ProductAdminFacade({
             addProductUsecase,

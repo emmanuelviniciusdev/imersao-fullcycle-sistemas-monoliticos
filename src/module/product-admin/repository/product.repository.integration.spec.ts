@@ -24,7 +24,7 @@ async function _addProduct(): Promise<Identifier> {
     return productIdentifier;
 }
 
-describe("ProductRepository Unit Tests", () => {
+describe("ProductRepository Integration Tests", () => {
     let sequelize: Sequelize;
 
     beforeEach(async () => {

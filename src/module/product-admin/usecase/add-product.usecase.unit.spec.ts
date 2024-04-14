@@ -1,4 +1,4 @@
-import { AddProductInputDTO } from "./add-product.dto";
+import { AddProductInputDTO } from "./add-product.usecase.dto";
 import { AddProductUsecase } from "./add-product.usecase";
 
 const MockProductRepository = () => ({

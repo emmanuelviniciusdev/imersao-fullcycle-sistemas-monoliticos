@@ -1,8 +1,14 @@
+import { UsecaseInterface } from "../../@shared/domain/usecase/usecase.interface";
 import { Product } from "../domain/entity/product.entity";
 import { ProductGateway } from "../gateway/product.gateway";
-import { AddProductInputDTO, AddProductOutputDTO } from "./add-product.dto";
+import {
+    AddProductInputDTO,
+    AddProductOutputDTO,
+} from "./add-product.usecase.dto";
 
-export class AddProductUsecase {
+export class AddProductUsecase
+    implements UsecaseInterface<AddProductInputDTO, AddProductOutputDTO>
+{
     private _repository: ProductGateway;
 
     constructor(repository: ProductGateway) {

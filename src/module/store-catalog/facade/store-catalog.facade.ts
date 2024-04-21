@@ -42,7 +42,7 @@ export class StoreCatalogFacade implements StoreCatalogFacadeInterface {
     }
 
     async find(
-        productId: Identifier
+        productId: Identifier,
     ): Promise<FindProductStoreCatalogFacadeOutputDTO> {
         return await this._findProductUsecase.execute({
             productId,

@@ -9,7 +9,7 @@ export class StoreCatalogFacadeFactory {
 
         const findProductUsecase = new FindProductUsecase(productRepository);
         const findAllProductsUsecase = new FindAllProductsUsecase(
-            productRepository
+            productRepository,
         );
 
         return new StoreCatalogFacade({

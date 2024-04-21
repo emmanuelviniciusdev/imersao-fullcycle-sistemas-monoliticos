@@ -9,7 +9,7 @@ export class ProductAdminFacadeFactory {
 
         const addProductUsecase = new AddProductUsecase(productRepository);
         const checkProductStockUsecase = new CheckProductStockUsecase(
-            productRepository
+            productRepository,
         );
 
         return new ProductAdminFacade({

@@ -19,7 +19,7 @@ export class CheckProductStockUsecase
     }
 
     async execute(
-        input: CheckProductStockInputDTO
+        input: CheckProductStockInputDTO,
     ): Promise<Partial<CheckProductStockOutputDTO>> {
         const product = await this._repository.find(input.productId.value);
 

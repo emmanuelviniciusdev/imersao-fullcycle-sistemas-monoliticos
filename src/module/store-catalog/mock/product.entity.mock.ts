@@ -2,11 +2,11 @@ import { Identifier } from "../../@shared/domain/value-object/identifier.value-o
 import { ProductEntity } from "../domain/entity/product.entity";
 
 export const PRODUCT_ENTITY_2_ID = new Identifier(
-    "6755982c-3547-47ff-8b12-0cc86ed66d9f"
+    "6755982c-3547-47ff-8b12-0cc86ed66d9f",
 );
 
 export const PRODUCT_ENTITY_1_ID = new Identifier(
-    "f3a2e4c8-6b7d-4e6e-9c1e-8e0a7f5d2b3b"
+    "f3a2e4c8-6b7d-4e6e-9c1e-8e0a7f5d2b3b",
 );
 
 export const PRODUCT_ENTITY_2 = new ProductEntity({

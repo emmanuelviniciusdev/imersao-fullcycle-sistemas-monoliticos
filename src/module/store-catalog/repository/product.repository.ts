@@ -6,7 +6,7 @@ import { ProductModel } from "./product.model";
 
 export class ProductRepository implements ProductGateway {
     async find(
-        productId: Identifier
+        productId: Identifier,
     ): Promise<Partial<ProductEntityInterface>> {
         const persistedProduct = await ProductModel.findOne({
             where: { id: productId.value },
@@ -40,7 +40,7 @@ export class ProductRepository implements ProductGateway {
                     salesPrice: persistedProduct.salesPrice,
                     createdAt: persistedProduct.createdAt,
                     updatedAt: persistedProduct.updatedAt,
-                })
+                }),
         );
 
         return productEntities;

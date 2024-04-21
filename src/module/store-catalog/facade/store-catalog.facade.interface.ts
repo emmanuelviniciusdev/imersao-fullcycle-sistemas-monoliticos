@@ -22,7 +22,7 @@ export interface FindAllProductsStoreCatalogFacadeOutputDTO {
 
 export interface StoreCatalogFacadeInterface {
     find(
-        productId: Identifier
+        productId: Identifier,
     ): Promise<FindProductStoreCatalogFacadeOutputDTO>;
     findAll(): Promise<FindAllProductsStoreCatalogFacadeOutputDTO>;
 }

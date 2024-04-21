@@ -8,7 +8,7 @@ async function _addProduct(): Promise<Identifier> {
     const productRepository = new ProductRepository();
 
     const productIdentifier = new Identifier(
-        "f3a2e4c8-6b7d-4e6e-9c1e-8e0a7f5d2b3b"
+        "f3a2e4c8-6b7d-4e6e-9c1e-8e0a7f5d2b3b",
     );
 
     const product = new Product({

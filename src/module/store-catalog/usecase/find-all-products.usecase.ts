@@ -19,7 +19,7 @@ export class FindAllProductsUsecase
     }
 
     async execute(
-        _: FindAllProductsUsecaseInputDTO
+        _: FindAllProductsUsecaseInputDTO,
     ): Promise<FindAllProductsUsecaseOutputDTO> {
         const products = await this._repository.findAll();
         return { products };

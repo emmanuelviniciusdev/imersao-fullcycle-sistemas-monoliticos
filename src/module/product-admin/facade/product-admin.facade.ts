@@ -45,7 +45,7 @@ export class ProductAdminFacade implements ProductAdminFacadeInterface {
     }
 
     async checkProductStock(
-        input: CheckProductStockFacadeInputDTO
+        input: CheckProductStockFacadeInputDTO,
     ): Promise<Partial<CheckProductStockFacadeOutputDTO>> {
         return await this._checkProductStockUsecase.execute(input);
     }

@@ -1,4 +1,4 @@
-import { UsecaseInterface } from "../../@shared/domain/usecase/usecase.interface";
+import { UsecaseInterface } from "../../@shared/usecase/usecase.interface";
 import { TransactionEntity } from "../domain/transaction.entity";
 import { PaymentGateway } from "../gateway/payment.gateway";
 import {

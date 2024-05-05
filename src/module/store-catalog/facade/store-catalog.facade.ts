@@ -1,4 +1,4 @@
-import { UsecaseInterface } from "../../@shared/domain/usecase/usecase.interface";
+import { UsecaseInterface } from "../../@shared/usecase/usecase.interface";
 import { Identifier } from "../../@shared/domain/value-object/identifier.value-object";
 import {
     FindAllProductsUsecaseInputDTO,

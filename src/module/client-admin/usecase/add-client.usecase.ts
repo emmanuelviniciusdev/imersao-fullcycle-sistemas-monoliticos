@@ -1,4 +1,4 @@
-import { UsecaseInterface } from "../../@shared/domain/usecase/usecase.interface";
+import { UsecaseInterface } from "../../@shared/usecase/usecase.interface";
 import { ClientGateway } from "../gateway/client.gateway";
 import { AddClientInputDTO } from "./add-client.usecase.dto";
 

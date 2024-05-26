@@ -18,6 +18,27 @@ export class ClientModel extends Model {
     @Column({ allowNull: false })
     declare address: string;
 
+    @Column
+    declare document: string;
+
+    @Column
+    declare street: string;
+
+    @Column
+    declare number: string;
+
+    @Column
+    declare complement: string;
+
+    @Column
+    declare city: string;
+
+    @Column
+    declare state: string;
+
+    @Column
+    declare zipCode: string;
+
     @Column({ allowNull: false })
     declare createdAt: Date;
 

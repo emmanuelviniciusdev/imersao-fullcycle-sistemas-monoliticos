@@ -1,7 +1,7 @@
 import { BaseEntity } from "../../../@shared/domain/entity/base.entity";
 import { Identifier } from "../../../@shared/domain/value-object/identifier.value-object";
 import { InvoiceModel } from "../../repository/invoice.model";
-import { Address } from "../value-object/address.value-object";
+import { Address } from "../../../@shared/domain/value-object/address.value-object";
 import {
     InvoiceItemEntity,
     InvoiceItemEntityInputProps,

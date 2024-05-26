@@ -5,6 +5,13 @@ export interface AddClientClientAdminFacadeInputDTO {
     name: string;
     email: string;
     address: string;
+    document?: string;
+    street?: string;
+    number?: string;
+    complement?: string;
+    city?: string;
+    state?: string;
+    zipCode?: string;
     updatedAt?: Date;
     createdAt?: Date;
 }
@@ -12,8 +19,15 @@ export interface AddClientClientAdminFacadeInputDTO {
 export interface FindClientClientAdminFacadeOutputDTO {
     id: Identifier;
     name: string;
-    email: string;
     address: string;
+    email: string;
+    document?: string;
+    street?: string;
+    number?: string;
+    complement?: string;
+    city?: string;
+    state?: string;
+    zipCode?: string;
     updatedAt: Date;
     createdAt: Date;
 }

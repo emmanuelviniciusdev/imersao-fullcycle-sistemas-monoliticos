@@ -1,7 +1,7 @@
 import { Identifier } from "../../@shared/domain/value-object/identifier.value-object";
 import { InvoiceItemEntityInterface } from "../domain/entity/invoice-item.entity.interface";
 import { InvoiceEntityInterface } from "../domain/entity/invoice.entity.interface";
-import { Address } from "../domain/value-object/address.value-object";
+import { Address } from "../../@shared/domain/value-object/address.value-object";
 
 export type FindInvoiceInput = {
     idInvoice: Identifier;

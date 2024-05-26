@@ -1,6 +1,6 @@
 import { Identifier } from "../../@shared/domain/value-object/identifier.value-object";
 
-interface ProductEntityStoreCatalog {
+export interface ProductEntityStoreCatalog {
     id: Identifier;
     name: string;
     description: string;
